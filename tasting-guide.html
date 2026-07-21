@@ -265,6 +265,8 @@
       화면 위쪽 검색창과 카테고리 탭이 자동으로 필터링해줍니다.
 ============================================================ */
 
+// 📋 '알림장 바로가기' 버튼이 이동할 주소 - 실제 링크로 바꿔주세요
+const NOTICE_LINK = 'https://example.com/notice';
 
 // 🏠 '메인으로' 버튼을 눌렀을 때 이동할 메인페이지 주소
 const MAIN_PAGE_URL = 'index.html';
@@ -360,6 +362,7 @@ searchInput.addEventListener('input', (e) => {
 });
 
 document.getElementById('noticeBtn').href = NOTICE_LINK;
+
 document.getElementById('homeBtn').addEventListener('click', () => {
   window.location.href = MAIN_PAGE_URL;
 });
